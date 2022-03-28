@@ -1,11 +1,10 @@
 import os
 import time
 
-GAME_FIELD = [["-", "-", "-"],
-              ["-", "-", "-"],
-              ["-", "-", "-"]]
-FIELD_SIZE = len(GAME_FIELD)
+
+FIELD_SIZE = 3
 FIELD_SIZE_INDEX = list(range(FIELD_SIZE))
+GAME_FIELD = [["-"] * FIELD_SIZE for line in range(FIELD_SIZE)]
 
 X_SIGN = "x"
 O_SIGN = "o"
